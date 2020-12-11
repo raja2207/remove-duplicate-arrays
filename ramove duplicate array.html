@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Remove Duplicate Array</title>
+</head>
+<body>
+    <script>
+        let sum=[2,3,5,1,6,7,3,6,1];
+        let output=[];
+        let w;
+        for(w=0; w<sum.length; w++){
+            if(output.indexOf(sum[w]) === -1){
+                output.push(sum[w]);
+                output.sort();
+            }
+        }
+        console.log(sum);
+        console.log(output);
+    </script>
+    
+</body>
+</html>
